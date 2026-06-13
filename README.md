@@ -2,7 +2,7 @@
 
 A highly optimized C++ systems simulator designed to evaluate physical network infrastructure (power grids, server farms, fiber-optic routes) for fault tolerance. The engine calculates the absolute minimum infrastructure backbone required to maintain connectivity and executes real-time diagnostics during simulated hardware failures (e.g., fiber-optic cuts).
 
-## ⚡ Core Engineering Mechanics
+## Core Engineering Mechanics
 
 This project bypasses standard libraries to implement two advanced data structures from scratch:
 
@@ -13,20 +13,17 @@ This project bypasses standard libraries to implement two advanced data structur
 2. **Kruskal's Minimum Spanning Tree (MST):**
    - Utilizes the DSU to greedily construct the most cost-effective, cycle-free infrastructure skeleton across the network topology.
 
-## 🛠️ Interactive Terminal Features
+## Interactive Terminal Features
 The engine features a stateful, event-driven command-line interface that allows for real-time infrastructure profiling:
 
 * **Baseline Calculation:** Sorts active edges and prints the optimized MST routing configuration.
 * **Network Diagnostics:** Scans the active grid to count the number of isolated components/islands.
 * **Failure Simulation:** Allows the user to intentionally sever explicit cable IDs, triggering dynamic recalculations of network integrity.
 
-## 🚀 How to Run
+## How to Run
 
-1. Clone the repository:
-   `git clone https://github.com/YourUsername/Dynamic-Resilience-Engine.git`
-
-2. Compile the C++ engine:
+1. Compile the C++ engine:
    `g++ resilience_engine.cpp -o resilience_engine`
 
-3. Execute the simulation:
+2. Execute the simulation:
    `./resilience_engine`
